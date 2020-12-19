@@ -1,8 +1,66 @@
 <html>
   <head>
-    <title>Welcome to Admin page!</title>
+    <title>Welcome to About page!</title>
+    <style>
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+</style>
   </head>
+
   <body>
+    <div class="container">
+      <center><h1>Welcome to</h1></center>
+      <center><h1>India's First Platform that hepls in solving the </h1></center>
+      <center><h1> Civic Problems</h1></center>
+      </div> 
+      <h1>Overview</h1>
+      <p  style="font-size:130%;">We’ve all heard this before, “the squeaky wheel gets the oil”; the loudest most pressing issues are often resolved first. But when we look at our most pressing national issues, it seems as if we’ve either run out of oil or we actually have way more wheels than we thought we did. With limited time and resources, can we expect our government to efficiently address every local and national problem with the care and proficiency that is required? What role do citizens play in solving local and national civic problems? What can we learn from celebrities and private companies that have stepped in to addressed niche community problems and interests?</p>
+      <p  style="font-size:130%;">The main purpose of this website to help people by providing a better way to solve the civic problems. This project is done in collaboaratio with Times of India.</p>
+      <div class="container">
+  <img src="ceo.jpg" alt="Avatar" style="width:90px">
+  <p><span>SriSivakumar Sundaram </span> CEO of Times of India.</p>
+  <p>“In the face of impossible odds, people who love this country can change it.”</p>
+</div>
+
+<div class="container">
+  <img src="md.jpg" alt="Avatar" style="width:90px">
+  <p><span>Sri Vineet Jain</span> Managing Director of Times of India.</p>
+  <p>“Ask not what your country can do for you; ask what you can do for your country.”</p>
+</div>
+
     
   </body>
 </html>

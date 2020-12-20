@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h2>Report a Civic Problem</h2>
+
+<div class="container">
+  <form action="report.php" method="POST">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname" placeholder="Your name.." required="">
+
+    <label for="email">Registered Email Id</label>
+    <input type="text" id="email" name="email" placeholder="Your email id is.." required="">
+    <label for="location">Location</label>
+    <select id="location" name="location" required="">
+      <option value="Anantapur Municipal Corporation">Anantapur Municipal Corporation</option>
+      <option value="Chittoor Municipal Corporation">Chittoor Municipal Corporation</option>
+      <option value="Tirupati Municipal Corporation">Tirupati Municipal Corporation</option>
+      <option value="Rajamahendravaram Municipal Corporation">Rajamahendravaram Municipal Corporation</option>
+      <option value="Kakinada Municipal Corporation">Kakinada Municipal Corporation</option>
+      <option value="Guntur Municipal Corporation">Guntur Municipal Corporation</option>
+      <option value="Kadapa Municipal Corporation">Kadapa Municipal Corporation</option>
+      <option value="Vijayawada Municipal Corporation ">Vijayawada Municipal Corporation </option>
+      <option value="Machilipatnam Municipal Corporation">Machilipatnam Municipal Corporation</option>
+      <option value="Kurnool Municipal Corporation ">Kurnool Municipal Corporation </option>
+      <option value="Nellore Municipal Corporation">Nellore Municipal Corporation</option>
+      <option value="Ongole Municipal Corporation">Ongole Municipal Corporation</option>
+      <option value="Srikakulam Municipal Corporation ">Srikakulam Municipal Corporation </option>
+      <option value="The Greater Visakhapatnam Municipal Corporation">The Greater Visakhapatnam Municipal Corporation</option>
+      <option value="Vizianagaram Municipal Corporation">Vizianagaram Municipal Corporation</option>
+      <option value="Eluru Municipal Corporation">Eluru Municipal Corporation</option>
+
+
+    </select>
+    <label for="Date">Date And Time</label>
+    <input type="datetime-local" id="Date" name="Date" required=""><br><br>
+    <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" accept="image/*">
+<br>
+<br>
+
+    <label for="subject">Comment</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit" required="">
+  </form>
+</div>
+
+</body>
+</html>
